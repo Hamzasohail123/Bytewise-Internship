@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* body{
+            margin: 10;
+            padding: 10;
+            background-color:#BFF098 ;
+            font-size: larger;
+    }
+
+    .container{
+        width: 70%;        
+        margin: auto;
+        background-color:#FDFCFB;
+        border: 2px solid black;
+        padding: 10px;
+        margin-top: 20px;        
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    } a:hover{
+        color: brown;
+    }
+
+    .container h1{
+        font-family: tahoma;
+        font-weight: 800;
+        font-style: italic;
+        text-decoration:underline;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;       
+    }
+
+    .container2{
+        margin: auto;
+        margin-top: 10px;
+        border: 2px solid black;
+        width: 70%;
+        padding: 10px;
+        background-color: rgb(230, 228, 210);
+    }
+    .categories{
+        margin: 10px;
+        border: 2px solid black;
+        padding: 10px;
+        border-radius: 15px;  ;
+    }
+    .categories h2{
+        text-align: center;
+    }
+    .categories ul{
+        padding: 0;
+        list-style: none;  
+    }
+    .categories li{
+        padding-bottom: 5px;
+        display: block;
+    }
+    .my-form{
+        padding: 20px;
+    }
+    .from-group{
+        padding-bottom: 15px;
+    }
+    .from-group label{
+        display: block;
+    }
+   .from-group input[type="text"]{
+    padding: 8px;
+    width: 100%;
+   }
+   .from-group textarea{
+    width: 100%;
+   }
+   .my-form input[type="submit"]{
+    background-color: black;
+    color: white;
+    padding: 10px 15px;    
+   }
+   .block{
+    padding: 10px;
+    float: left;
+    width: 33%;
+    border: 1px solid black;
+    box-sizing: border-box; 
+     
+   }
+   .bg-img{
+    margin-top: 20px;
+    width: 70%;
+    height: 500px;
+    border: 1px solid;
+    position:relative ;
+   }
+   .main-block{
+    float: left;
+    width: 65%;
+    background-color: aqua;
+   }
+   .side-bar{
+    float: right;
+    width: 35%;
+    background-color: #284411;
+    box-sizing: border-box;
+    color: wheat;     
+   }
+   .p-box{
+    box-sizing: border-box;
+    border: 1px solid;
+    width: 800px;
+    height: 500px;
+    margin-top: 20px;
+    position: relative;
+    margin-left: 30px;
+    position: relative;
+    background-image: url(https://img.freepik.com/free-photo/top-view-background-beautiful-white-grey-brown-cream-blue-background_140725-72219.jpg);
+    max-width: 100%;
+    background-position: 100px 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+   }
+   .clr{
+    margin-top: 500px;
+   }
+    */
+    body{
+        background-color: aqua;
+        color: black;
+        font: size 16px;
+        line-height: 1.6em;
+        margin: 0;
+    }
+    .container{
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+    }
+    .main-header{
+        background-color: coral;
+    }
+    .navbar{
+        background-color: #333;
+        color: #fff;
+    }
+    .navbar ul{
+        padding: 0;
+        list-style: none;
+    }
+    .navbar li{
+        display: inline;
+    }
+
+    .navbar a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        padding-right:  15px; 
+    }
+    .showcase{
+        background-image: url(https://www.freecodecamp.org/news/content/images/2021/06/w-qjCHPZbeXCQ-unsplash.jpg);
+        background-position: center right;
+        min-height: 300px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .showcase h1{
+        color: #fff;
+        font-size: 35px;
+        line-height: 1.6em;
+        padding-top: 30px;
+        }
+    .main{
+        float: left;
+        width: 70%;
+        padding:0 30px ; 
+        box-sizing: border-box;
+    } 
+    .sidebar{
+        float: right;
+        width: 30%;
+        padding:10px; 
+        color: #fff;
+        box-sizing: border-box;
+    }     
+
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1>My website</h1>
+        </div>
+        </header>
+
+        <nav class="navbar">
+            <div class="container">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>        
+        </nav>
+
+        <section class="showcase">
+            <div class="container">
+                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore at recusandae maxime reprehenderit debitis molestiae praesentium exercitationem id sint.</h1>
+            </div>
+        </section>
+
+        <div class="container">
+
+        <section id="main">
+            <h1>Lorem ipsum dolor</h1>
+            <p>sit amet consectetur adipisicing elit. Neque, qui repudiandae? Velit impedit sint voluptatem ad asperiores! Enim, quibusdam vel. Recusandae eaque unde placeat quo autem dolores vitae quis necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolorem ipsa harum enim quaerat possimus aspernatur eum ducimus, laudantium, dolorum tempore libero sed aperiam cum labore doloribus, adipisci excepturi! Sunt</p>
+        </section>
+
+        <aside id="sidebar">
+            <p>sit amet consectetur adipisicing elit. Neque, qui repudiandae? Velit impedit sint voluptatem ad asperiores! Enim, quibusdam vel. Recusandae eaque unde placeat quo autem dolores vitae quis necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolorem ipsa harum enim quaerat possimus aspernatur eum ducimus.</p>
+        </aside>
+    </div>
+
+    <footer class="main-footer">
+        <p>copyright &copy; 2017</p>
+    </footer>
+
+ <!-- <div class="container">
+    <h1>hello world</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam inventore sit placeat iusto, autem deleniti illum voluptates ratione minus ipsam facilis quo possimus assumenda facere nulla, labore reprehenderit aliquam eos Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime ex, perferendis at sequi perspiciatis voluptates molestias maiores commodi cumque! Consequatur quos et esse! Praesentium officiis perferendis quae maxime sed animi?.</p>
+ </div>
+
+ <div class="container2">
+    <h1>hello world</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam inventore sit placeat iusto, autem deleniti illum voluptates ratione minus ipsam facilis quo possimus assumenda facere nulla, labore reprehenderit aliquam eos Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime ex, perferendis at sequi perspiciatis voluptates molestias maiores commodi cumque! Consequatur quos et esse! Praesentium officiis perferendis quae maxime sed animi?.</p>
+ </div>
+
+ <div class="categories">
+    <h2>categories</h2>
+    <ul>
+        <li> <a href="">category 1</a> </li>
+        <li><a href="">category 2</a> </li>
+        <li><a href=""> category 3</a></li>
+        <li><a href="">category 4</a></li>
+    </ul>
+ </div>
+
+ <div>
+    <form class="my-form">
+        <h2>Fill the form</h2>
+        <div class="from-group">
+           <label>Name</label> 
+           <input type="text" placeholder="name">
+        </div> <br>
+        <div class="from-group">
+           <label> Email address</label> 
+        <input type="text" placeholder="abc@gmail.com"> <br>
+        </div> <br>
+        <div class="from-group">
+            <label "> Message</label>
+            <textarea class="from-group"></textarea>
+        </div>
+         
+        <input type="submit" placeholder="submit">
+       </form>
+
+ </div>
+
+ <div class="block">
+    <h3>heading</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eaque natus dolorum quaerat ratione eveniet dicta officia saepe obcaecati, ullam optio eum et nobis ea, sequi aut. Quidem, ducimus aperiam?</p>
+ </div>
+
+ <div class="block">
+    <h3>heading</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eaque natus dolorum quaerat ratione eveniet dicta officia saepe obcaecati, ullam optio eum et nobis ea, sequi aut. Quidem, ducimus aperiam?</p>
+ </div>
+
+ <div class="block">
+    <h3>heading</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eaque natus dolorum quaerat ratione eveniet dicta officia saepe obcaecati, ullam optio eum et nobis ea, sequi aut. Quidem, ducimus aperiam?</p>
+ </div>
+
+ <div class="main-block">
+    <h3>heading</h3>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, molestias sint? Amet soluta quos dicta ipsam numquam! Ab earum eum, vitae reprehenderit, laborum eos dignissimos, iste odio expedita ratione commodi.</p> 
+ </div>
+ <div class="side-bar">
+    <h3>heading2</h3>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, molestias sint? Amet soluta quos dicta ipsam numquam! Ab earum eum, vitae reprehenderit, laborum eos dignissimos, iste odio expedita ratione commodi.</p>    
+ </div>
+<div class="clr"></div>
+ <div class="p-box">
+    <h1>hello workd</h1>
+    <p>this is paragraph</p>
+ </div>
+
+ <div style="margin-bottom: 500px;"></div> -->
+</body>
+</html>
