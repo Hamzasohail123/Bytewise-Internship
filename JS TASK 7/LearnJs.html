@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JAVASCRIPT CRASH COURSE</h1>
+</body>
+<script>
+    console.log('hello world');
+
+    let age = 25
+    console.log(age);
+    
+    // const value cant be changed while 'let' can
+    const salary = 0
+    //salary = 50000
+    console.log(salary);
+
+    let name = "hamza"
+    name = "huzaifa"
+    console.log(name);
+
+    //objects 
+
+    const person = {
+        name : 'hamza',
+        age : 25,
+        education : 'BS CS'
+    }
+    console.log(person.education, age);
+
+    //operators
+
+    let x = 10;
+    let y = 5;
+    console.log(x-y);
+    console.log(x / y);
+    console.log(x + y);
+    console.log(++x);
+    console.log(--y);
+    console.log(y <= x);
+
+    const isValidNuber = x > 8 && 4 > y ;
+    console.log(isValidNuber);
+
+    const isEven = 10 % 2 === 0 ? true : false ;
+    console.log(isEven);
+
+    console.log(2 + '2'); // 22
+    console.log('2' - '1'); // converts into number 1
+    
+    console.log('hamza' - 'sohail'); // NaN 
+    
+    console.log((500).toString());
+
+    let var1 = 'hamza';
+    let var2= 'hamza';
+    console.log(var1 == var2);
+    console.log(var1 === var2);
+    
+    // if else 
+
+    let num = -5;
+    if(num > 0){
+        console.log('number is positive');
+    } else{
+        console.log('number is negative')
+    }
+
+    const color =('red')
+    
+    // switch
+
+    switch(color){
+        case 'red':
+            console.log('color is red');
+            break
+        case 'blue':
+            console.log('color is blue');
+            break
+        case 'white':  
+            console.log('color is white');
+            break
+        default:
+            console.log('not a valid color');                     
+    }
+
+    // for loop
+    
+    for(let i =1; i <= 5; i++){
+        console.log('iteration number'+ i)
+    }
+
+    // while loop
+
+    let i = 1;
+    while(i <= 5){
+        console.log('iteration number'+ i);
+        i++
+    }
+
+    //function
+
+    function greet(){
+        console.log('good morning');
+    }
+    greet();
+
+    function greett(name){
+        console.log('good morning', name);
+    }
+    greett('hamza');
+
+    function add(num1, num2){
+        return num1 + num2
+    }
+    let sum = add(25,25) ;
+    console.log(sum);
+
+
+
+   
+</script>
+</html>
