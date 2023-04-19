@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>   
+
+<input type="text" id="input">
+<button onclick="add()">add</button>
+<button onclick="dltAll()">delete all</button>
+<ul id="list"> </ul>
+
+
+
+<script>
+    let input = document.getElementById("input");
+    let list = document.getElementById("list");
+
+  
+    function add(){
+        let li = document.createElement("li");
+        let LiTxt = document.createTextNode(input.value);
+        li.appendChild(LiTxt);
+        list.appendChild(li);
+
+        
+        // dlt button
+
+    let Dltbtn = document.createElement("button");
+    let btnText = document.createTextNode("delete");
+    Dltbtn.appendChild(btnText);
+    Dltbtn.setAttribute("onclick" , "dlt(this)");
+    li.appendChild(Dltbtn);
+
+    // edit button
+
+    let edibtn = document.createElement("button");
+    let editText = document.createTextNode("edit");
+    edibtn.appendChild(editText);
+    edibtn.setAttribute("onclick" , "edit(this)");
+    li.appendChild(edibtn);
+
+    // save button
+    let savebtn = document.createElement("button");
+    let saveText = document.createTextNode("input clean");
+    savebtn.appendChild(saveText);
+    savebtn.setAttribute("onclick" , "save(this)");
+    li.appendChild(savebtn);
+    }
+
+    function dltAll(){
+        list.innerHTML = "";
+    }
+
+    function dlt(a){
+        a.parentNode.remove();
+    }
+
+    function edit(b){
+        let edit =prompt ("edit here", b.parentNode.firstChild.nodeValue);
+        b.parentNode.firstChild.nodeValue = edit;
+    }
+
+    function save(c){
+        let save  = input.value;
+        input.value = " ";
+    }
+
+
+</script>
+
+<!-- 
+<script>
+    let input = document.getElementById("input");
+    let list =document.getElementById("list");
+    function add(){
+        let li = document.createElement("li");
+        let liTxt =document.createTextNode(input.value);
+        li.appendChild(liTxt);
+        list.appendChild(li);
+    
+       // dlt button
+    
+        let dltBtn = document.createElement("button");
+        let dltTxt = document.createTextNode("delete");
+        dltBtn.appendChild(dltTxt);
+        dltBtn.setAttribute("onclick", "dlt(this)");
+        li.appendChild(dltBtn);
+        
+        // edit button
+    
+        let editBtn = document.createElement("button");
+        let editTxt = document.createTextNode("edit");
+        editBtn.appendChild(editTxt);
+        dltBtn.setAttribute("onclick" , "edit(this)");
+        li.appendChild(editBtn);        
+    } 
+    
+    function dltAll(){
+        list.innerHTML = " ";        
+    }
+    
+    function dlt(e){
+        e.parentNode.remove();
+    }
+    
+    function edit(g){
+        let a = prompt("edit",g.parentNode.firstChild.nodeValue);
+        g.parentNode.firstChild.nodeValue = a ;
+    } -->
+
+
+
+
+      
+
+
+
+
+
+    
+    </script>
+
+
+
+</body>
+
+   
+</html>
